@@ -8,7 +8,6 @@
         tools:context=".MainActivity"
         android:orientation="vertical">
 
-
     <TextView
             android:id="@+id/tv_text"
             android:layout_width="match_parent"
@@ -19,7 +18,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-    android:textSize="@dimen/font_large_24"/>
+            android:textSize="@dimen/font_large_24"/>
 
     <ImageView
             android:id="@+id/iv_bender"
@@ -35,27 +34,27 @@
             android:background="@color/color_primary"
             android:layout_marginTop="@dimen/spacing_normal_16">
 
-    <EditText android:id="@+id/et_message"
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1"
-              android:lines="1"
-              android:textColor="@color/color_grey_light"
-              android:textColorHint="@color/color_grey_light"
-              android:hint="Введите текст"
-              android:paddingTop="@dimen/spacing_normal_16"
-              android:paddingBottom="@dimen/spacing_normal_16"
-              android:layout_marginLeft="@dimen/spacing_normal_16"
-              android:layout_marginRight="@dimen/spacing_normal_16"
-    />
+    <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:textColor="@color/color_grey_light"
+            android:textColorHint="@color/color_grey_light"
+            android:hint="Введите текст"
+            android:paddingTop="@dimen/spacing_normal_16"
+            android:paddingBottom="@dimen/spacing_normal_16"
+            android:layout_marginLeft="@dimen/spacing_normal_16"
+            android:layout_marginRight="@dimen/spacing_normal_16"/>
 
         <ImageView
-                android:id="@+id/iv_send"
-                android:layout_width="@dimen/spacing_large_24"
-                android:layout_height="@dimen/spacing_large_24"
-                android:src="@drawable/ic_send_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="@dimen/spacing_normal_16"/>
+            android:id="@+id/iv_send"
+            android:layout_width="@dimen/spacing_large_24"
+            android:layout_height="@dimen/spacing_large_24"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/spacing_normal_16"/>
 
     </LinearLayout>
 
