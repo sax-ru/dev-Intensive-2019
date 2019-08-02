@@ -18,7 +18,7 @@ class Bender(var status:Status = Status.NORMAL, var question: Question = Questio
             "Отлично - ты справился\n${question.question}" to status.color
         }else {
             status = status.nextStatus()
-            "Это не правильный ответ!\n${question.question}" to status.color
+            "Это неправильный ответ\n${question.question}" to status.color
         }
     }
 
@@ -53,7 +53,7 @@ class Bender(var status:Status = Status.NORMAL, var question: Question = Questio
         SERIAL("Мой серийный номер?", listOf("2716057")){
             override fun nextQuestion(): Question = IDLE
         },
-        IDLE("На этом всё, вопросов больше нет", listOf()){
+        IDLE("На этом все, вопросов больше нет", listOf()){
             override fun nextQuestion(): Question = IDLE
         };
 
